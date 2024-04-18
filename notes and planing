@@ -1,0 +1,27 @@
+--ALL SECTIONS--
+the three texts after each section header will make them inside a container and this container will be grid , reason: in the mobile format it will make it easy for me to reformat the layout of the texts.
+
+---
+
+--Landing page--
+the image in the mobile will be cropped.
+
+---
+
+--Accomplish section--
+grid layout
+
+---
+
+--Collaborate section--
+images will be in flex container.
+
+---
+
+--Footer section--
+grid layout.
+
+---
+
+---FONTS---
+400,500,600,700

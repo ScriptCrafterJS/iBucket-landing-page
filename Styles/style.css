@@ -1,0 +1,697 @@
+/*setting up the variables, colors, fonts*/
+:root {
+  /* COLORS */
+  --clr-primary: #6962ff;
+  --clr-bg-grayblue: #1b2239;
+  --clr-bg-darkblue: #13192f;
+  --clr-bg-lightblue: #27325e;
+  /* #27325e :this color also used in the last section for the button-text "Create my bucket list"*/
+  --clr-text-primary: #fff;
+  --clr-text-feature-blue: var(--clr-primary);
+  --clr-text-feature-green: #00be90;
+  --clr-text-feature-purple: #7c57f5;
+  --clr-text-feature-red: #ed5b7b;
+
+  /* FONTS */
+  /* font family */
+  --ff-primary: "Inter", sans-serif;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-bg-darkblue);
+  position: relative;
+  height: 200vh;
+  /* overflow: hidden; */
+}
+
+header {
+  background-color: var(--clr-bg-grayblue);
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70rem;
+  padding: 1rem 1.5rem;
+  margin-inline: auto;
+  align-items: center;
+  position: relative;
+}
+
+header .navbar .navbar__links {
+  display: flex;
+  list-style: none;
+}
+.navbar .navbar__links a {
+  margin-inline: 1.1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+header .navbar .navbar__btn-download {
+  background-color: var(--clr-primary);
+  color: white;
+  padding: 10px;
+  border-radius: 999px;
+  border: solid 2px #0d6efd;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .navbar .navbar__btn-download:hover {
+  background-color: #7a73fd;
+  border-color: var(--clr-primary);
+}
+
+header .navbar .navbar__menu {
+  width: 3rem;
+  height: 3rem;
+  background-color: #13192f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  display: none;
+  position: relative;
+}
+
+header .navbar .navbar__menu img {
+  display: none;
+  width: 50%;
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+header .navbar .navbar__dropdown-menu--small-screen {
+  position: absolute;
+  top: 4rem;
+  right: -1.5rem;
+  background-color: #202944;
+  list-style: none;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.navbar .navbar__dropdown-menu--small-screen li {
+  transition: 0.3s;
+}
+
+.navbar .navbar__dropdown-menu--small-screen a {
+  display: block;
+  padding: 1.3rem;
+  padding-right: 9rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .navbar__dropdown-menu--small-screen li:hover {
+  background-color: #2a3658;
+}
+
+.navbar__dropdown-menu--small-screen::before {
+  position: absolute;
+  content: "";
+  top: -2rem;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  background-color: transparent;
+}
+
+.navbar .navbar__dropdown-menu--small-screen a:not(:nth-child(4)) {
+  border-bottom: solid 1px var(--clr-bg-lightblue);
+}
+
+header .navbar .navbar__menu:hover img {
+  transform: rotate(90deg);
+}
+
+header .navbar .navbar__menu:hover .navbar__dropdown-menu--small-screen {
+  /*here for dropping down the menu*/
+  display: block;
+}
+
+header .navbar .navbar__dropdown-menu--small-screen:hover {
+  /*here for keep hovering over the menu and not lose it*/
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  header .navbar .navbar__links {
+    display: none;
+  }
+  header .navbar .navbar__menu,
+  header .navbar .navbar__menu img {
+    display: flex;
+  }
+  header .navbar .navbar__menu img {
+    width: 35%;
+  }
+  header .navbar .navbar__dropdown-menu--small-screen {
+    display: none;
+  }
+}
+/* header styling END */
+/* landing section styling START */
+.landing-section {
+  /* min-height: 100vh; */
+  position: relative;
+  overflow: hidden;
+}
+.landing-section .landing-section__world-map {
+  position: absolute;
+  /* when i used the percentages instead of rem/em it stays the image in the middle all the time */
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -99%);
+  width: 1100px;
+}
+.landing-section__information {
+  color: white;
+  padding: 4rem;
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.landing-section__information .landing-section__intro-text {
+  border: solid 1px #27325e;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.landing-section__information .landing-section__header-text {
+  font-size: 2.5rem;
+}
+.landing-section__information .landing-section__header-text span {
+  background-color: #ffffff33;
+}
+.landing-section__information .landing-section__description {
+  padding: 2rem 0;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.landing-section__information .landing-section__create-list-button {
+  color: white;
+  padding: 20px 40px;
+  background-color: var(--clr-primary);
+  border-radius: 99px;
+  border: none;
+  font-weight: 600;
+}
+
+.landing-section__landing-image {
+  position: relative;
+  height: 25.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-inline: 20px;
+  border-radius: 2rem;
+}
+.landing-section__landing-image img {
+  position: absolute;
+  width: 60rem;
+}
+
+.landing-section__landing-image img:first-child {
+  z-index: 1;
+  bottom: 0;
+}
+.landing-section__landing-image img:last-child {
+  border-radius: 1.5rem;
+  height: 20rem;
+  bottom: 0;
+}
+@media screen and (max-width: 600px) {
+  .landing-section__landing-image img:first-child {
+    width: 45rem;
+  }
+  .landing-section__landing-image img:last-child {
+    height: 10rem;
+  }
+  .landing-section__landing-image {
+    height: 19rem;
+  }
+}
+/* styling the wings */
+.landing-section .landing-section__achievements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+.landing-section__achievements .achivement {
+  position: relative;
+}
+.landing-section__achievements .achivement .achivement__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  line-height: 1.7;
+}
+.achivement .achivement__info p:first-child {
+  font-weight: 700;
+}
+.achivement .achivement__info p:last-child {
+  font-weight: 600;
+  opacity: 80%;
+  font-size: 13px;
+}
+/* landing section styling END */
+/* accomplishments section styling START*/
+.global-container {
+  max-width: 55rem;
+  margin-inline: auto;
+  margin-top: 7rem;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+}
+.intro-information {
+  padding: 0 3rem;
+}
+.info-text {
+  margin: 1.5rem 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.trip-planing .features .feature {
+  color: var(--clr-primary);
+}
+.trip-planing .pictures-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+}
+.pictures-container img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+.pictures-container > div > div {
+  position: relative;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.pictures-container > div > div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pictures-container__first div:first-child,
+.pictures-container__second div:last-child {
+  height: calc(60% - 1rem);
+}
+.pictures-container__first div:first-child img,
+.pictures-container__second div:last-child img {
+  width: 120%;
+}
+.pictures-container__first div:last-child,
+.pictures-container__second div:first-child {
+  height: 40%;
+}
+
+.trip-planing .pictures-container div:nth-child(3) {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 600px) {
+  .global-container {
+    width: 92%;
+  }
+  .pictures-container {
+    margin-inline: auto;
+  }
+  .trip-planing .pictures-container > div:first-child {
+    display: none;
+  }
+  .trip-planing .pictures-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .trip-planing .pictures-container > div:nth-child(2) {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+  }
+  .trip-planing .pictures-container div:nth-child(3) {
+    grid-column: span 1;
+  }
+  .trip-planing .pictures-container__second div:first-child,
+  .trip-planing .pictures-container__second div:last-child {
+    height: 85%;
+    width: 50%;
+  }
+  .trip-planing .pictures-container__first div:first-child img,
+  .trip-planing .pictures-container__second div:last-child img {
+    width: 100%;
+  }
+  .trip-planing .pictures-container > div:last-child {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    height: 24.5rem;
+  }
+  .pictures-container > div:last-child img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+/* accomplishments section styling END*/
+/* visited places section styling START */
+.visited-places .features .feature {
+  color: var(--clr-text-feature-green);
+}
+.visited-places .pictures-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.visited-places .pictures-container > div:first-child {
+  grid-column: span 3;
+}
+.visited-places .pictures-container > div:first-child img {
+  height: 100%;
+}
+.visited-places .pictures-container div:last-child div:first-child {
+  height: calc(60% - 1rem);
+}
+.visited-places .pictures-container div:last-child div:first-child img {
+  width: 120%;
+}
+.visited-places .pictures-container div:last-child div:last-child {
+  height: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .visited-places .pictures-container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .visited-places .pictures-container > div:first-child {
+    grid-column: span 1;
+  }
+  .visited-places .pictures-container div:last-child {
+    display: flex;
+    gap: 1rem;
+    height: 9rem;
+  }
+  .visited-places .pictures-container div:last-child div {
+    width: 50%;
+    height: 100% !important;
+  }
+}
+
+/* visited places section styling END */
+/* next trip section styling START */
+.next-trip .pictures-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.next-trip .features .feature {
+  color: var(--clr-primary);
+}
+.next-trip .pictures-container > div > div:first-child {
+  height: 40%;
+  display: flex;
+  gap: 1rem;
+}
+.next-trip .pictures-container > div > div:first-child div {
+  position: relative;
+}
+.next-trip .pictures-container > div > div:first-child div:last-child {
+  width: 40%;
+}
+.next-trip .pictures-container > div > div:first-child div:first-child {
+  position: relative;
+  width: calc(60% - 1rem);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.next-trip .pictures-container > div > div:last-child {
+  height: calc(60% - 1rem);
+}
+
+@media screen and (max-width: 600px) {
+  .next-trip .pictures-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+  }
+  .next-trip .pictures-container > div > div:last-child {
+    display: none;
+  }
+  .next-trip .pictures-container > div > div:first-child {
+    height: 7.8rem;
+  }
+  .next-trip .pictures-container > div > div:first-child div {
+    width: 50% !important;
+    border-radius: 1.5rem;
+  }
+  .next-trip .pictures-container > div > div:first-child div:last-child {
+    overflow: hidden;
+  }
+}
+/* next trip section styling END */
+/* collaboration section styling START */
+.friends-collaboration .features .feature {
+  color: var(--clr-text-feature-red);
+}
+.friends-collaboration .pictures-container img {
+  width: 100%;
+}
+.friends-collaboration .pictures-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .friends-collaboration .global-container {
+    margin-top: 7rem;
+  }
+  .friends-collaboration .pictures-container {
+    grid-template-columns: 1fr;
+  }
+  .friends-collaboration .pictures-container div {
+    height: 19.5rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5rem;
+  }
+  .friends-collaboration .pictures-container img {
+    position: absolute;
+    top: -3.7rem;
+    left: 0;
+  }
+}
+/* collaboration section styling END */
+/* bucket-list section styling START */
+.application .application__reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+  row-gap: 3rem;
+  background-color: #fef4e7;
+  color: #1e1e1e;
+  padding: 3rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.application .application__reviews .application__review {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.application .application__download img {
+  width: 100%;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+.application .application__review__starts-rate {
+  display: flex;
+  justify-content: center;
+}
+.application .application__review:first-child svg:nth-child(1) path,
+.application .application__review:first-child svg:nth-child(2) path,
+.application .application__review:first-child svg:nth-child(3) path,
+.application .application__review:nth-child(2) svg:not(:nth-child(5)) path,
+.application .application__review:nth-child(3) svg path,
+.application .application__review:nth-child(4) svg:nth-child(1) path,
+.application .application__review:nth-child(4) svg:nth-child(2) path,
+.application .application__review:nth-child(5) svg path,
+.application .application__review:nth-child(6) svg:nth-child(1) path,
+.application .application__review:nth-child(6) svg:nth-child(2) path,
+.application .application__review:nth-child(6) svg:nth-child(3) path {
+  fill: #f7930d;
+}
+
+.application .application__review__description {
+  font-size: 12px;
+  font-weight: 400;
+}
+.application .application__review__store {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.application .application__download {
+  position: relative;
+  height: 18.5rem;
+  overflow: hidden;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.application .application__download img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 55rem;
+}
+
+.application .application__download__info {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  max-width: 27rem;
+  text-align: start;
+  padding: 2rem;
+}
+
+.application .application__download__header {
+  font-size: 33px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.application .application__download__description {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.application .application__download__btn {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 99px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.bucket-list .global-container {
+  padding-bottom: 7rem;
+}
+
+@media screen and (max-width: 600px) {
+  .application .application__reviews {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+  }
+  .application .application__download img {
+    width: max-content;
+  }
+  .application .application__download {
+    overflow: hidden;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+  .application .application__download__header {
+    font-size: 24px;
+  }
+}
+/* bucket-list section styling END */
+/* footer section styling START */
+.footer {
+  background-color: var(--clr-bg-lightblue);
+  padding: 3rem 0;
+}
+.footer .global-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  margin-top: 0;
+}
+.footer .footer__info--left {
+  text-align: start;
+}
+.footer .footer__info--right {
+  display: flex;
+  gap: 5rem;
+  text-align: start;
+}
+.footer .footer__info--right ul {
+  list-style: none;
+}
+.footer .footer__info--right li {
+  font-size: 13px;
+  padding-top: 0.5rem;
+}
+.footer .footer__info--right h5 {
+  font-size: 15px;
+  font-weight: 700;
+}
+.footer__info--left .footer__info__text {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+.footer__info--left .footer__info__copy-right {
+  font-size: 13px;
+  font-weight: 400;
+  color: hsl(0, 0%, 60%);
+}
+.footer__info--right .footer__info__languages li {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer .global-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer .footer__info--right {
+    flex-wrap: wrap;
+    column-gap: 8rem;
+    row-gap: 2rem;
+  }
+}
+/* footer section styling END */

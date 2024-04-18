@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iBucket</title>
+    <!-- linking the normalize css file to render the element normally -->
+    <link rel="stylesheet" href="Styles/normalize.css" />
+    <!-- linking the main styling file -->
+    <link rel="stylesheet" href="Styles/style.css" />
+    <!-- Google "Inter" font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav class="navbar">
+        <img
+          class="navbar__logo"
+          src="images/svg/logo-light.svg.svg"
+          alt="logo of the website"
+        />
+        <menu class="navbar__links">
+          <li><a href="#">Updates</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Help</a></li>
+        </menu>
+        <button class="navbar__btn-download">Download</button>
+        <div class="navbar__menu">
+          <img src="images/menu-arrow.png" alt="drop down menu arrow" />
+          <menu class="navbar__dropdown-menu--small-screen">
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#help">Help</a></li>
+          </menu>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- Goals & Trips section start -->
+    <main class="landing-section">
+      <div class="landing-section__map-container">
+        <img
+          class="landing-section__world-map"
+          src="images/svg/header-world-dark.svg.svg"
+          alt="dots using polygons shaping the world map"
+        />
+      </div>
+      <div class="landing-section__information">
+        <p class="landing-section__intro-text">
+          Introducing regions and cities
+        </p>
+        <h1 class="landing-section__header-text">
+          Achieve your<br />goals and trips <span>together</span>
+        </h1>
+        <p class="landing-section__description">
+          Stay focused on the things you want to do before you die with our
+          simple and beautiful app. Set goals, plan trips and make new
+          unforgettable memories with friends.
+        </p>
+        <button class="landing-section__create-list-button">
+          Create my list
+        </button>
+      </div>
+      <div class="landing-section__landing-image">
+        <img
+          src="images/main_landing_picture.png"
+          alt="two girls at the sides and two mens all laughing with each other"
+        />
+        <img
+          src="images/background-behind-people.png"
+          alt="mountains to reflect behind the people laughing with each other"
+        />
+      </div>
+      <div class="landing-section__achievements">
+        <div class="achivement">
+          <img src="images/svg/ribbon-white.svg" alt="wings" />
+          <div class="achivement__info">
+            <p>Apps We Love</p>
+            <p>App Store</p>
+          </div>
+          <p></p>
+        </div>
+        <div class="achivement">
+          <img src="images/svg/ribbon-white.svg" alt="wings" />
+          <div class="achivement__info">
+            <img src="images/svg/5-white-stars.svg" alt="5 white stars" />
+            <p>4.8 out of 5</p>
+          </div>
+          <p></p>
+        </div>
+        <div class="achivement">
+          <img src="images/svg/ribbon-white.svg" alt="wings" />
+          <div class="achivement__info">
+            <p>Trending Apps</p>
+            <p>App Store</p>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </main>
+    <!-- Goals & Trips section end -->
+    <!-- accomplishment section START -->
+    <article class="trip-planing">
+      <div class="global-container">
+        <div class="intro-information">
+          <h2 class="head-text">Accomplish your goals</h2>
+          <p class="info-text">
+            Short and long-term goals will help you work towards something and
+            boost motivation. With our bucket list app you can track your
+            progress by adding tasks or organise goals in lists.
+          </p>
+          <div class="features">
+            <p class="feature">Collaborate with friends</p>
+            <p class="feature">Set tasks and reminders</p>
+            <p class="feature">Visualize with images</p>
+          </div>
+        </div>
+        <div class="pictures-container">
+          <div class="pictures-container__first">
+            <div>
+              <img
+                src="images/accomplishment section/china_wall.png"
+                alt="china wall"
+              />
+            </div>
+            <div>
+              <img
+                src="images/accomplishment section/todo_tasks.png"
+                alt="mountains"
+              />
+            </div>
+          </div>
+          <div class="pictures-container__second">
+            <div>
+              <img
+                src="images/accomplishment section/mountains_kong.png"
+                alt="planned trips to go listed in a list"
+              />
+            </div>
+            <div>
+              <img
+                src="images/accomplishment section/mosque.png"
+                alt="todo list with some tasks"
+              />
+            </div>
+          </div>
+          <div>
+            <img
+              src="images/accomplishment section/7world_wonders.png"
+              alt="mosque"
+            />
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- accomplishment section END -->
+    <!-- visited places section START -->
+    <article class="visited-places">
+      <div class="global-container">
+        <div class="intro-information">
+          <h2 class="head-text">Mark your visited places</h2>
+          <p class="info-text">
+            Keep track of places around the world you’ve been or want to visit
+            in the future. Get inspired by new destinations, discover our
+            curated guides or easily book tickets.
+          </p>
+          <div class="features">
+            <p class="feature">Mark 240+ countries</p>
+            <p class="feature">Mark 4.500+ regions</p>
+            <p class="feature">Mark 7.000+ cities</p>
+          </div>
+        </div>
+        <div class="pictures-container">
+          <div>
+            <img
+              src="images/visited places section/map_places-location.png"
+              alt="map places location"
+            />
+          </div>
+          <div>
+            <div>
+              <img
+                src="images/visited places section/people_hiking.png"
+                alt="people hiking"
+              />
+            </div>
+            <div>
+              <img
+                src="images/visited places section/buttons.png"
+                alt="filter list, visited or want to visit buttons"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- visited places section END -->
+    <!-- next trip section START -->
+    <article class="next-trip">
+      <div class="global-container">
+        <div class="intro-information">
+          <h2 class="head-text">Plan your next trip</h2>
+          <p class="info-text">
+            Travel itineraries helps you prioritise, estimate costs and maximise
+            your experiences. Plan your next day-by-day road trip with family or
+            friends and get fully prepared to achieve it.
+          </p>
+          <div class="features">
+            <p class="feature">Interactive maps</p>
+            <p class="feature">Itinerary group planner</p>
+            <p class="feature">Manage reservations</p>
+          </div>
+        </div>
+        <div class="pictures-container">
+          <div>
+            <img
+              src="images/next trip section/USA_Traviling_line.png"
+              alt="map places location"
+            />
+          </div>
+          <div>
+            <div>
+              <div>
+                <img
+                  src="images/next trip section/bridge.png"
+                  alt="people hiking"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/next trip section/fancy_hotel.png"
+                  alt="filter list, visited or want to visit buttons"
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/next trip section/connecting_roads_to_places.png"
+                alt="filter list, visited or want to visit buttons"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- next trip section END -->
+    <!-- collaboration section START -->
+    <article class="friends-collaboration">
+      <div class="global-container">
+        <div class="intro-information">
+          <h2 class="head-text">Collaborate with your friends</h2>
+          <p class="info-text">
+            Goals you’ve fulfilled will give you great memories to share with
+            the world. Connect with your friends and family or meet new people
+            to collaborate together.
+          </p>
+          <div class="features">
+            <p class="feature">Follow your friends</p>
+            <p class="feature">Collaborate together</p>
+            <p class="feature">Interact with people</p>
+          </div>
+        </div>
+        <div class="pictures-container">
+          <div class="pictures-container__left">
+            <img
+              src="images/collaporation section/people_looking_at_one_laptop.png"
+              alt="4 girls and one guy looking at an ipad"
+            />
+          </div>
+          <div class="pictures-container__right">
+            <img
+              src="images/collaporation section/trips_intertainment.png"
+              alt="list with trips & hospitality with some cards previewing some content"
+            />
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- collaboration section END -->
+    <!-- bucket-list section START -->
+    <article class="bucket-list">
+      <div class="global-container">
+        <div class="intro-information">
+          <h2 class="head-text">Collaborate with your friends</h2>
+          <p class="info-text">
+            Goals you’ve fulfilled will give you great memories to share with
+            the world. Connect with your friends and family or meet new people
+            to collaborate together.
+          </p>
+        </div>
+        <article class="application">
+          <div class="application__reviews">
+            <div class="application__review">
+              <div class="application__review__starts-rate">
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="application__review__description">
+                Fine customer service too.
+              </p>
+              <p class="application__review__store">App Store</p>
+            </div>
+            <div class="application__review">
+              <div class="application__review__starts-rate">
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="application__review__description">
+                Nice way to manage my travel goals.
+              </p>
+              <p class="application__review__store">App Store</p>
+            </div>
+            <div class="application__review">
+              <div class="application__review__starts-rate">
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="application__review__description">
+                Super for keeping track of my trips!
+              </p>
+              <p class="application__review__store">App Store</p>
+            </div>
+            <div class="application__review">
+              <div class="application__review__starts-rate">
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="application__review__description">
+                Overall new favorite planning app! This is the visualization
+                planning app I’ve been wanting for some time.
+              </p>
+              <p class="application__review__store">App Store</p>
+            </div>
+            <div class="application__review">
+              <div class="application__review__starts-rate">
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="application__review__description">
+                Very nice and good app! Works great for keeping track of trips
+                and adding destinations and hotels that way!
+              </p>
+              <p class="application__review__store">Google Play</p>
+            </div>
+            <div class="application__review">
+              <div class="application__review__starts-rate">
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.32694 1.25935L4.82808 4.23596L1.47473 4.71483C0.873339 4.80025 0.6324 5.52642 1.06847 5.94234L3.49454 8.25799L2.92071 11.5291C2.81744 12.1204 3.45323 12.5633 3.98575 12.2868L6.98563 10.7423L9.98553 12.2868C10.518 12.5611 11.1538 12.1204 11.0506 11.5291L10.4767 8.25799L12.9028 5.94234C13.339 5.52642 13.0979 4.80025 12.4965 4.71483L9.14319 4.23596L7.64441 1.25935C7.37582 0.728776 6.59778 0.722031 6.32694 1.25935Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="application__review__description">
+                The app is really beautiful and has all what's needed to become
+                the best bucket list app.
+              </p>
+              <p class="application__review__store">App Store</p>
+            </div>
+          </div>
+          <div class="application__download">
+            <img
+              src="images/phones_orange-background.png"
+              alt="phones on an orange background"
+            />
+
+            <div class="application__download__info">
+              <h3 class="application__download__header">Download our app</h3>
+              <p class="application__download__description">
+                Download our app for free and create your first bucket list
+                entry today! Pick between a trip, list or goal and visualize
+                them by adding personal stories and beautiful photos/videos.
+              </p>
+              <button class="application__download__btn">
+                Create my bucket list
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+    <!-- bucket-list section END -->
+    <!-- footer section START -->
+    <footer class="footer" id="help">
+      <div class="global-container">
+        <div class="footer__info--left">
+          <img
+            src="images/svg/white-logo-footer.svg"
+            alt="white website logo"
+          />
+          <p class="footer__info__text">
+            Bucket let's you prioritise the things you want to achieve in life,
+            together with friends and family in a simple and beautiful way.
+            Create your bucket list today and share new memories tomorrow. Dream
+            it. Plan it. Achieve it.
+          </p>
+          <p class="footer__info__copy-right">
+            &copy; 2015-2023 iBucket • Made in Amsterdam
+          </p>
+        </div>
+        <div class="footer__info--right">
+          <div class="footer__info__about">
+            <h5>About</h5>
+            <ul>
+              <li>Help</li>
+              <li>Pricing</li>
+              <li>Updates</li>
+              <li>Press</li>
+              <li>Terms</li>
+              <li>Privacy</li>
+            </ul>
+          </div>
+          <div class="footer__info__social">
+            <h5>Social</h5>
+            <ul>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+              <li>Youtube</li>
+              <li>Pinterest</li>
+              <li>TikTok</li>
+            </ul>
+          </div>
+          <div class="footer__info__languages">
+            <h5>Languages</h5>
+            <ul>
+              <li>
+                <img src="images/flags/flag-en.svg.svg" alt="USA flag" />English
+              </li>
+              <li>
+                <img
+                  src="images/flags/flag-de.svg.svg"
+                  alt="Germany flag"
+                />Deutsch
+              </li>
+              <li>
+                <img src="images/flags/flag-es.svg.svg" alt="Spain flag" />
+                Español
+              </li>
+              <li>
+                <img
+                  src="images/flags/flag-fr.svg.svg"
+                  alt="France flag"
+                />Français
+              </li>
+              <li>
+                <img src="images/flags/flag-it.svg.svg" alt="Italia" />Italiano
+              </li>
+              <li>
+                <img
+                  src="images/flags/flag-nl.svg.svg"
+                  alt="Netherlands"
+                />Nederlands
+              </li>
+              <li>
+                <img
+                  src="images/flags/flag-pt.svg.svg"
+                  alt="Portugal
+                    "
+                />Português
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section END -->
+  </body>
+</html>
